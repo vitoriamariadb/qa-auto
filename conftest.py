@@ -13,3 +13,9 @@ def pytest_configure(config):
     config.addinivalue_line(
         "markers", "smoke: testes de fumaça"
     )
+
+pytest_plugins = [
+    "fixtures.http_fixtures",
+    "fixtures.browser_fixtures",
+    "fixtures.data_fixtures",
+]
