@@ -1,0 +1,17 @@
+[
+    {
+        "name": "João Silva",
+        "email": "joao@example.com",
+        "age": 30
+    },
+    {
+        "name": "Maria Santos",
+        "email": "maria@example.com",
+        "age": 25
+    },
+    {
+        "name": "Pedro Costa",
+        "email": "pedro@example.com",
+        "age": 35
+    }
+]

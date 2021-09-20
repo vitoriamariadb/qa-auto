@@ -1,0 +1,22 @@
+[
+    {
+        "endpoint": "/users",
+        "method": "GET",
+        "expected_status": 200
+    },
+    {
+        "endpoint": "/posts",
+        "method": "GET",
+        "expected_status": 200
+    },
+    {
+        "endpoint": "/comments",
+        "method": "GET",
+        "expected_status": 200
+    },
+    {
+        "endpoint": "/albums",
+        "method": "GET",
+        "expected_status": 200
+    }
+]
