@@ -42,3 +42,38 @@ qa-auto/
 ## Licença
 
 MIT
+
+## Documentação
+
+Para instruções detalhadas, consulte o [Guia de Uso](GUIA.md).
+
+## Recursos
+
+- Testes de API REST
+- Testes de UI com Selenium
+- Page Object Model
+- Testes parametrizados
+- Testes data-driven
+- Execução assíncrona
+- Interface TUI
+- Relatórios HTML e JSON
+- Fixtures reutilizáveis
+
+## Comandos Rápidos
+
+```bash
+# Executar todos os testes
+pytest tests/ -v
+
+# Testes de API apenas
+pytest tests/ -m api -v
+
+# Testes de UI apenas
+pytest tests/ -m ui -v
+
+# Com relatório HTML
+./run_tests.sh
+
+# Interface TUI
+python tui.py
+```
