@@ -77,3 +77,20 @@ pytest tests/ -m ui -v
 # Interface TUI
 python tui.py
 ```
+
+## Docker
+
+Execute os testes em containers Docker.
+
+```bash
+# Build
+docker build -t qa-auto .
+
+# Run
+docker run qa-auto
+
+# Com Docker Compose
+docker-compose up
+```
+
+Veja [DOCKER.md](docs/DOCKER.md) para mais detalhes.

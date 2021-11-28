@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  qa-auto:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: pytest tests/ -m api -v --html=reports/report.html --self-contained-html
+
+  qa-auto-ui:
+    build: .
+    volumes:
+      - ./reports:/app/reports
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: pytest tests/ -m ui -v --html=reports/report_ui.html --self-contained-html
