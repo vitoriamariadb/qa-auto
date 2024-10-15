@@ -22,3 +22,4 @@ def test_selenium_helpers_element_not_found(browser, base_url):
     browser.get(base_url)
     element = wait_for_element(browser, (By.ID, "nao-existe"), timeout=1)
     assert element is None
+
