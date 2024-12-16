@@ -23,4 +23,3 @@ def test_api_endpoints(http_session, api_base_url, endpoint_data):
         response = http_session.get(url)
 
     assert response.status_code == expected_status
-
