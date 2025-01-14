@@ -13,4 +13,3 @@ pytest_plugins = [
     "fixtures.browser_fixtures",
     "fixtures.data_fixtures",
 ]
-
