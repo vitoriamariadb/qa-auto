@@ -44,4 +44,3 @@ def test_delete_user(http_session, api_base_url):
     user_id = 1
     response = http_session.delete(f"{api_base_url}/users/{user_id}")
     assert response.status_code == 200
-
