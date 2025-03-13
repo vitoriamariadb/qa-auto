@@ -48,4 +48,3 @@ async def test_concurrent_api_calls():
         assert len(users) == 5
         for user in users:
             assert "name" in user
-
