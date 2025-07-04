@@ -25,4 +25,3 @@ def test_post_comments_count(http_session, api_base_url, post_id, expected_comme
     assert response.status_code == 200
     comments = response.json()
     assert len(comments) == expected_comments
-
