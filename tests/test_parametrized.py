@@ -61,4 +61,3 @@ def test_get_multiple_users(http_session, api_base_url, user_id):
 )
 def test_status_code_validation(status_code, is_success):
     assert (200 <= status_code < 300) == is_success
-
