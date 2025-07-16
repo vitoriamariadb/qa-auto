@@ -22,4 +22,3 @@ def sample_users():
         {"id": 2, "name": "Maria Santos", "email": "maria@example.com"},
         {"id": 3, "name": "Pedro Costa", "email": "pedro@example.com"},
     ]
-
