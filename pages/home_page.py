@@ -25,4 +25,3 @@ class HomePage(BasePage):
 
     def is_loaded(self):
         return self.is_visible(self.HEADING)
-
