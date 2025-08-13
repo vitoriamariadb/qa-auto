@@ -49,3 +49,4 @@ async def test_async_runner():
     results = await fetch_multiple_urls(urls)
     assert len(results) == 2
     assert all(r["status"] == 200 for r in results)
+
