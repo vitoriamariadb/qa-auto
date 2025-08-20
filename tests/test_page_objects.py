@@ -22,3 +22,4 @@ def test_home_page_loaded(browser, base_url):
     page = HomePage(browser, base_url)
     page.open()
     assert page.is_loaded()
+
