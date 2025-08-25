@@ -28,3 +28,4 @@ def test_get_post_comments(http_session, api_base_url):
     comments = response.json()
     assert len(comments) > 0
     assert all(comment["postId"] == post_id for comment in comments)
+
