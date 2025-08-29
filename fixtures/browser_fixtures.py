@@ -24,3 +24,4 @@ def browser(chrome_options):
 @pytest.fixture
 def base_url():
     return "https://www.example.com"
+
