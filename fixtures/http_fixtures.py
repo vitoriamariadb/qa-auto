@@ -18,3 +18,4 @@ def api_base_url():
 @pytest.fixture
 def api_timeout():
     return 30
+
