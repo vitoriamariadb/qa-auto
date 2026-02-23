@@ -2,6 +2,7 @@ from textual.app import App
 from textual.widgets import Header, Footer, Button, Static
 from textual.containers import Container
 
+
 class TestRunnerTUI(App):
     CSS = """
     Screen {
@@ -52,6 +53,7 @@ class TestRunnerTUI(App):
             status.update("Executando testes de UI...")
         elif button_id == "run_all":
             status.update("Executando todos os testes...")
+
 
 if __name__ == "__main__":
     app = TestRunnerTUI()

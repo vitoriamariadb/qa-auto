@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 
+
 class HomePage(BasePage):
     HEADING = (By.TAG_NAME, "h1")
     PARAGRAPH = (By.TAG_NAME, "p")

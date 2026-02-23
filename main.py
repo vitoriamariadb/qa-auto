@@ -2,6 +2,7 @@
 import sys
 import subprocess
 
+
 def run_tests(test_type="all"):
     if test_type == "api":
         cmd = ["pytest", "tests/", "-m", "api", "-v"]
@@ -12,8 +13,10 @@ def run_tests(test_type="all"):
 
     subprocess.run(cmd)
 
+
 def run_tui():
     subprocess.run(["python", "tui.py"])
+
 
 def main():
     print("qa-auto - Framework de Automação de Testes")
@@ -41,6 +44,7 @@ def main():
         sys.exit(0)
     else:
         print("Opção inválida")
+
 
 if __name__ == "__main__":
     main()

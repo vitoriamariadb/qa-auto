@@ -2,6 +2,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+
 class ReportGenerator:
     def __init__(self, output_dir="reports"):
         self.output_dir = Path(output_dir)
@@ -13,15 +14,15 @@ class ReportGenerator:
 
         html_content = self._build_html(results)
 
-        with open(filename, 'w', encoding='utf-8') as f:
+        with open(filename, "w", encoding="utf-8") as f:
             f.write(html_content)
 
         return filename
 
     def _build_html(self, results):
-        total = results.get('total', 0)
-        passed = results.get('passed', 0)
-        failed = results.get('failed', 0)
+        total = results.get("total", 0)
+        passed = results.get("passed", 0)
+        failed = results.get("failed", 0)
 
         html = f"""
 <!DOCTYPE html>
@@ -53,7 +54,7 @@ class ReportGenerator:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = self.output_dir / f"report_{timestamp}.json"
 
-        with open(filename, 'w', encoding='utf-8') as f:
+        with open(filename, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2)
 
         return filename
